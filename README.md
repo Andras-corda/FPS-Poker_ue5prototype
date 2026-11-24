@@ -1,49 +1,49 @@
 # FPS x Poker
-Prototype de mécanique hybride : un système de poker simplifié mixé avec un duel FPS
+Hybrid mechanic prototype: a simplified poker system mixed with an FPS duel
 ------
 ## Concept
 
-Le joueur reçoit une main de poker. La combinaison obtenue détermine l'arme avec laquelle il affronte son adversaire dans un duel en arène.
+The player is dealt a poker hand. The resulting combination determines the weapon used to face the opponent in an arena duel.
 
-## Boucle de jeu
+## Game Loop
 
-1. Distribution d'une main de 5 cartes
-2. Un tour d'échange : le joueur peut jeter jusqu'à 3 cartes
-3. Évaluation de la main
-4. Attribution d'une arme selon la combinaison
-5. Duel contre l'adversaire dans une arène
-6. Fin de manche, retour à l'étape 1
+1. Deal a 5-card hand
+2. One exchange round: the player can discard up to 3 cards
+3. Hand evaluation
+4. Weapon assignment based on the combination
+5. Duel against the opponent in an arena
+6. End of round, back to step 1
 
-## Combinaisons et armes (prototype)
+## Combinations and Weapons (prototype)
 
-| Combinaison | Arme |
+| Combination | Weapon |
 |---|---|
-| Carte haute | Pistolet classique (glock 17) |
-| Paire | Pistolet semi-automatique (Berreta M9) |
-| Brelan | Fusil à pompe (winchester M1897) |
-| Couleur | Arme blanche (pas d'idée pour l'instant) |
-| Full | Fusil automatique (M16 - AR15) |
+| High card | Classic pistol (Glock 17) |
+| Pair | Semi-automatic pistol (Beretta M9) |
+| Three of a kind | Shotgun (Winchester M1897) |
+| Flush | Melee weapon (no idea yet) |
+| Full house | Automatic rifle (M16 - AR15) |
 
-Les armes ont des profils différents (portée, cadence, dégâts) plutôt qu'une simple échelle de puissance, afin d'éviter qu'une combinaison rare écrase toutes les autres. Cependant, une M16 en comparaison à un glock 17 reste une arme avec plus de munitions et une cadence plus élevé.
+Weapons have different profiles (range, fire rate, damage) rather than a simple power scale, to prevent a rare combination from overpowering all the others. That said, an M16 compared to a Glock 17 still has more ammo and a higher fire rate.
 
-## Périmètre du prototype
+## Prototype Scope
 
-- Une seule arène
-- Un seul adversaire IA, qui reçoit aussi une main et une arme
-- Cinq catégories d'armes
-- Interface de cartes minimale
+- A single arena
+- A single AI opponent, who also receives a hand and a weapon
+- Five weapon categories
+- Minimal card interface
 
-## Choix technique imposé
+## Imposed Technical Choices
 
-- Moteur : Unreal Engine 5
-- Langage : Blueprints uniquement
+- Engine: Unreal Engine 5
+- Language: Blueprints only
 
-## Feuille de route
+## Roadmap
 
-- [ ] Deck, cartes et distribution
-- [ ] Évaluateur de mains
-- [ ] Table des armes
-- [ ] Personnage FPS et arène
-- [ ] Phase d'échange
-- [ ] Adversaire IA
-- [ ] Boucle complète
+- [ ] Deck, cards and dealing
+- [ ] Hand evaluator
+- [ ] Weapon table
+- [ ] FPS character and arena
+- [ ] Exchange phase
+- [ ] AI opponent
+- [ ] Full loop
